@@ -147,7 +147,7 @@ def train_model(config):
             global_step += 1
 
          # Save the model
-        model_filename = get_weights_file_path(config, f'{epoch:02.d}')
+        model_filename = get_weights_file_path(config, f'{epoch:02d}')
         torch.save(
             {
                 'epoch': epoch,
